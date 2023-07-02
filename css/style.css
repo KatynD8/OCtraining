@@ -50,6 +50,7 @@ header{
 .section-title {
     margin: 0;
     font-size: 22px;
+    
 }
 
 
@@ -143,17 +144,29 @@ header{
 
 
 
-
+a{
+    text-decoration: none;
+    color: black;
+}
 
 
 
 
 
 .card {
+
     background-color: white;
     border-radius: 20px;
     padding: 5px;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
+    display: flex;
+    flex-direction: column;
+   
+
+}
+
+.card-txt{
+    text-decoration: none;
 }
 
 .card img {
@@ -188,12 +201,22 @@ header{
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+}
+
+.hebergement_card_container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 30px;
 }
 
 .hebergement_cards{
    
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     gap: 30px;
     row-gap: 30px;
@@ -232,7 +255,9 @@ header{
 
 .populaires-cards .card {
     display: flex;
+    flex-direction: row;
     margin-top: 33px;
+    width: 100%;
 }
 
 .populaires-cards img {
@@ -314,18 +339,35 @@ footer{
     }
 
     .populaires {
+       
+    
         width: 100%;
         margin-top: 50px;
+    }
+    .card{
+        display: flex;
+        flex-direction: row;
+        max-width: 100%;
+       
+        
+        
+    }
+
+    .populaire_container{
+        display: flex;
+        flex-direction: row;
     }
 
     .populaires-cards {
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
+        flex-wrap: wrap;
+        max-width: 275px;
+        
     }
 
     .populaires-cards .card {
-        width: 30%;
+        width: 100%;
     }
 
     .populaires-cards .card-title {
@@ -360,6 +402,8 @@ footer{
 
 
 
+
+
     .navbutton {
         display: flex;
         justify-content: center;
@@ -372,10 +416,28 @@ footer{
         
         
                 
-        
+     
        
         
     }
+
+
+    .hebergement_card_container{
+        display: flex;
+        flex-direction: column;
+    }
+
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        
+     
+    }
+
+
+    
     
     .navbutton:hover{
         border-bottom: 2px solid var(--main-color);
@@ -399,9 +461,24 @@ footer{
         gap: 30px;
     }
 
+    .hebergements img {
+        height: 124px;
+        width:100%;
+        object-fit:cover;
+        
+    }
+
+
+    .populaires{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
     .populaires-cards {
         display: flex;
         flex-direction: column;
+        width: 100%;
         
     }
 
