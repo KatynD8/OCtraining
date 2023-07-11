@@ -366,9 +366,17 @@ nav {
     flex-direction: column;
     box-shadow: 0px 3px 15px 0px rgba(0, 0, 0, 0.10);
     margin-bottom: 65px;
-    border-radius: 20px 20px 0px 0px;
+    border-radius: 20px 20px 20px 20px;
+    transition: all 0.2s;
 
 }
+
+.activity_card:hover {
+    transform: scale(1.02);
+    
+    cursor: pointer;
+}
+
 
 .activity_card img {
 
@@ -480,6 +488,9 @@ footer p {
     .card .stars {
         margin-top: auto;
     }
+
+
+    /*Activity */ 
 
     .activity_card img {
 
@@ -618,7 +629,7 @@ footer p {
 
     .populaires {
         padding-left: 0;
-        background-color: var(--light-grey);
+    
     }
 
     .popular-list {
@@ -626,6 +637,7 @@ footer p {
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: var(--light-grey);
     }
 
     .card-popular {
@@ -644,6 +656,17 @@ footer p {
     }
 
     /* Activity */
+
+
+    .activity {
+        display: flex;
+        flex-direction: column;
+        
+        gap: 30px;
+        align-items: center;
+        
+    }
+    
 
     .activity_card img {
 
