@@ -47,7 +47,7 @@ nav {
 
     color: black;
     border-top: 2px solid transparent;
-    /* Rend la bordure invisible sans :hover */
+        /* Rend la bordure invisible sans :hover */
 }
 
 .bloc-menu {
@@ -112,6 +112,7 @@ nav {
 
 .fa-solid.fa-magnifying-glass {                /* Faire disparaitre l'icone de loupe en Desktop*/
     display: none;
+   
 }
 
 
@@ -132,6 +133,9 @@ nav {
 
 .filters h3 {
     margin-right: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
 }
 
 .btn-filter p {
@@ -154,11 +158,6 @@ nav {
 
 
 
-.btn-filter .fa-child-reaching {
-    padding: 14px 17px 14px 17px;
-    margin-right: 10px;
-    color: var(--blue);
-}
 
 .btn-filter .fa-heart,
 .fa-dog,
@@ -171,6 +170,24 @@ nav {
     font-size: 20px;
 }
 
+
+.fa-info{
+    color: var(--blue);
+    border: 1px solid var(--grey);
+    padding: 3px 3px 3px;
+    border-radius: 50%;
+    text-align: center;
+    justify-content: center;
+
+    
+}
+
+.icon-info{
+
+    display: flex;
+    flex-direction: row;
+    
+}
 
 
 
@@ -371,6 +388,10 @@ nav {
 
 }
 
+.activity_card h3{
+    margin: 3px;
+}
+
 .activity_card:hover {
     transform: scale(1.02);
     
@@ -422,9 +443,8 @@ nav {
 
 footer {
     display: flex;
-    justify-content: center;
-    flex-basis: 100%;
-    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:space-evenly;
     gap: 20px;
     background-color: var(--light-grey);
     padding: 30px 0;
@@ -533,6 +553,7 @@ footer p {
         display: flex;
         flex-basis: 100%;
         text-align: center;
+        gap: 0px;
     }
 
     .bloc-menu a {
@@ -540,11 +561,16 @@ footer p {
         text-align: center;
         justify-content: center;
         border-bottom: 3px solid var(--grey);
+        
+       
+        
+        
     }
 
     .bloc-menu a:hover {
         border-top-color: transparent;
         border-bottom-color: var(--blue);
+       
     }
 
     /*Search bar*/
